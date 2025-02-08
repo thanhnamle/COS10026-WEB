@@ -8,15 +8,16 @@
 
   <title>Jobs Landing - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <link href="index.css" rel="stylesheet">
 </head>
-<body>
+<body class="home-body">
   <header class="container">
     <div class="container header-content">
-      <a href="home.html" class="logo"><h1 class="logo-web">JobsLanding</h1></a>
+      <a href="COS10026-pj1-home.html" class="logo"><h1 class="logo-web">JobsLanding</h1></a>
       <nav class="navbar-container">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="jobs.html">Jobs</a></li>
           <li><a href="apply.html">Apply</a></li>
@@ -27,7 +28,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="home-main">
     <section class="hero">
       <div class="container">
         <div class="hero-img">
@@ -36,78 +37,98 @@
         <div class="hero-content">
           <h1>Find Your Dream Job</h1>
           <p>Explore our diverse job listings and start your next career journey.</p>
-          <a href="#" class="hero-btn">Explore Now</a>
+          <a href="#featured-jobs" class="hero-btn">Explore Now</a>
         </div>
       </div>
     </section>
 
-    <section class="featured-jobs">
+    <section id="featured-jobs" class="featured-jobs">
       <div class="container">
         <h2>Featured Jobs</h2>
         <div class="job-cards">
           <div class="job-card">
-            <div class="job-card-image" style="background-image: url('https://via.placeholder.com/400x200/0d2240/ffffff')"></div>
+            <div class="job-card-image"><img src="images/front_end_developer.png"></div>
             <div class="job-card-content">
-              <h3>Software Engineer</h3>
-              <p>ABC Company</p>
-              <a href="#">Apply</a>
+              <h3>Front-end Developer</h3>
+              <p>👨‍🎨 Front-End Developer: "Bringing designs to life with seamless, interactive experiences." </p>
+              <a href="jobs.html">Apply</a>
             </div>
           </div>
           <div class="job-card">
-            <div class="job-card-image" style="background-image: url('https://via.placeholder.com/400x200/0d2240/ffffff')"></div>
+            <div class="job-card-image"><img src="images/back_end_developer.png"></div>
             <div class="job-card-content">
-              <h3>Marketing Specialist</h3>
-              <p>XYZ Corporation</p>
-              <a href="#">Apply</a>
+              <h3>Back-end Developer</h3>
+              <p>👨‍💻 Back-End Developer: "Powering the web with robust, scalable, and secure systems." </p>
+              <a href="jobs.html">Apply</a>
             </div>
           </div>
           <div class="job-card">
-            <div class="job-card-image" style="background-image: url('https://via.placeholder.com/400x200/0d2240/ffffff')"></div>
+            <div class="job-card-image"><img src="images/data_engineer.png"></div>
             <div class="job-card-content">
-              <h3>Graphic Designer</h3>
-              <p>Design Studio</p>
-              <a href="#">Apply</a>
+              <h3>Data Engineer</h3>
+              <p>📊 Data Engineer: "Transforming raw data into actionable insights with precision." </p>
+              <a href="jobs.html">Apply</a>
+            </div>
+          </div>
+          <div class="job-card">
+            <div class="job-card-image"><img src="images/quality_control.webp"></div>
+            <div class="job-card-content">
+              <h3>Quality Control Engineer</h3>
+              <p>🔍 Quality Control Engineer: "Ensuring flawless performance through meticulous testing." </p>
+              <a href="jobs.html">Apply</a>
+            </div>
+          </div>
+          <div class="job-card">
+            <div class="job-card-image"><img src="images/automation_engineer.jpg"></div>
+            <div class="job-card-content">
+              <h3>Automation Engineer</h3>
+              <p>🤖 Automation Engineer: "Optimizing workflows by turning manual tasks into automation." </p>
+              <a href="jobs.html">Apply</a>
             </div>
           </div>
         </div>
       </div>
     </section>
     
-    <div class="container-about-us">
-      <div class="text-content">
-          <h3>Enterprise Suite</h3>
-          <h1>This is how <br> <span>good companies</span> <br> find good company.</h1>
-          <p>JobsLanding - Access Top Talent and Full Suite of Hybrid Workforce Management Tools. This is how innovation works now.</p>
-          <ul class="about-us-list">
-            <li>✔ Access expert talent to fill your skill gaps</li>
-            <li>✔ Control your workflow: hire, classify and pay your talent</li>
-            <li>✔ Partner with Upwork for end-to-end support</li>
-          </ul>
-          <button class="about-us-button">Learn more</button>
+
+    <div class="about-us">
+      <h2>About Us</h2>
+      <div class="container-about-us">
+        <div class="text-content">
+            <h3>Enterprise Suite</h3>
+            <h1>This is how <br> <span>good companies</span> <br> find good company.</h1>
+            <p>JobsLanding - Access Top Talent and Full Suite of Hybrid Workforce Management Tools. This is how innovation works now.</p>
+            <ul class="about-us-list">
+              <li>✔ Access expert talent to fill your skill gaps</li>
+              <li>✔ Control your workflow: hire, classify and pay your talent</li>
+              <li>✔ Partner with Upwork for end-to-end support</li>
+            </ul>
+            <button class="about-us-button">Learn more</button>
+        </div>
+        <div class="image-content">
+          <img src="/img/about-8.jpg" alt="Enterprise Suite Image">
+        </div>
       </div>
-      <div class="image-content">
-        <img src="/images/about-8.jpg" alt="Enterprise Suite Image">
+  
+      <br>
+  
+      <div class="container-about-us-2">
+        <div class="image-content-2">
+          <img  src="/img/about-9.jpeg" alt="Find suitable job Image">
+        </div>
+        <div class="text-content-2">
+            <h3>Find suitable job</h3>
+            <p>Meet clients you’re excited to work with and take your career or business to new heights.</p>
+            <ul class="about-us-list-2">
+              <li>✔ Find opportunities for every stage of your freelance career</li>
+              <li>✔ Control when, where, and how you work</li>
+              <li>✔ Explore different ways to earn</li>
+            </ul>
+            <button class="about-us-button-2">Find opportunities</button>
+        </div>
       </div>
     </div>
-
-    <br>
-
-    <div class="container-about-us-2">
-      <div class="text-content">
-          <h3>Enterprise Suite</h3>
-          <h1>This is how <br> <span>good companies</span> <br> find good company.</h1>
-          <p>JobsLanding - Access Top Talent and Full Suite of Hybrid Workforce Management Tools. This is how innovation works now.</p>
-          <ul class="about-us-list">
-            <li>✔ Access expert talent to fill your skill gaps</li>
-            <li>✔ Control your workflow: hire, classify and pay your talent</li>
-            <li>✔ Partner with Upwork for end-to-end support</li>
-          </ul>
-          <button class="about-us-button">Learn more</button>
-      </div>
-      <div class="image-content">
-        <img src="/images/about-8.jpg" alt="Enterprise Suite Image">
-      </div>
-    </div>
+    
   
   
   

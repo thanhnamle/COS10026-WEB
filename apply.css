@@ -32,9 +32,13 @@
     text-shadow: 1px 1px;
 }
 
+.form-font {
+    size: 50px !important;
+}
+
 
 /* Form Container */
-form {
+.form-form {
     max-width: 800px;
     margin: 20px auto;
     background: #ffffff;
@@ -67,7 +71,7 @@ label {
 } */
 
 /* Inputs, Textareas, and Selects */
-input, select, textarea {
+input, select {
     width: 95%;
     padding: 10px;
     margin-top: 5px;
@@ -83,11 +87,6 @@ input:focus, select:focus, textarea:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     background-color: #e8f0fe;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 80px;
 }
 
 .spacing {
@@ -195,13 +194,11 @@ legend {
     padding: 5px 10px;
 } */
 
-h1 {
-    font-size: 3em;
-}
+
 
 /* Buttons */
-button, input[type="submit"], input[type="reset"] {
-    display: inline-block;
+/* .button, input[type="submit"], input[type="reset"] {
+    display: inline-flex;
     width: 100%;
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
@@ -213,14 +210,37 @@ button, input[type="submit"], input[type="reset"] {
     cursor: pointer;
     margin-top: 10px;
     transition: all 0.3s ease;
-}
+} */
 
-button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+/* .button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
     background: linear-gradient(135deg, #0056b3, #003f7f);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.button, input[type="submit"], input[type="reset"] {
+    width: 95%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"] {
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
 }
 
 input[type="reset"] {
+    color: white;
     background: linear-gradient(135deg, #ff6f61, #d84315);
 }
 
