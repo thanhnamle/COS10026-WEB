@@ -1280,4 +1280,82 @@ html {
     input, select, textarea, button {
         font-size: 14px;
     }
-  }  
+  }
+/* Enhancements Styling */
+  /* General Styles */
+.enhancements-body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e3eaf2;
+  color: #222; /* Improved text visibility */
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.enhancements-header {
+  background-color: #1b2a4e;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Styling */
+.enhancements-main {
+  width: 85%;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Unique Section Styling */
+.enhancements-section1 {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-left: 6px solid #0056b3;
+  background: #d9e6f2;
+  color: #222; /* Ensuring good contrast */
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.enhancements-section2 {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-left: 6px solid #218838;
+  background: #d4f8d4;
+  color: #222; /* Ensuring good contrast */
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* Links Styling */
+a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #003d82;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .enhancement-main {
+      width: 95%;
+      padding: 20px;
+  }
+
+  .enhancement-header {
+      font-size: 1.5rem;
+      padding: 1rem;
+  }
+}
