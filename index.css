@@ -196,13 +196,16 @@ html {
   .footer-menu a:hover {
     color: #fff;
   }
+
+  .footer-bottom p {
+    color: white;
+  }
 /* Home Page Styling */
   /* Reset some default styles */
   
-  /* body, h1, h2, h3, ul, li, a {
+  body, h1, h2, h3, ul, li, a {
     text-decoration: none;
-    font-family: 'Roboto', Arial, sans-serif;
-  } */
+  }
 
   .container {
     max-width: 6000px;
@@ -305,7 +308,7 @@ html {
     background-position: center;
     z-index: 1;
     border-bottom-right-radius: 200px;
-    margin-left: -200px;
+    margin-left: -220px;
   }
 
 
@@ -784,7 +787,371 @@ html {
 
 /**-------------------------------------------------------------------**/
 
+/* About Styling */
+.about_image{
+  width: 100%;               /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của div */
+  height: 150px;             /* Đặt chiều cao cố định cho hình ảnh */
+  object-fit: contain;         /* Đảm bảo hình ảnh không bị méo, cắt bớt nếu cần để giữ tỷ lệ */
+  border-radius: 5px;        /* Bo tròn góc cho hình ảnh */
+}
 
+.about_section2 {
+  display: flex;                    /* Flex container, arranging items in a row */
+  flex-wrap: wrap;                  /* Allow items to wrap to the next line if needed */
+  justify-content: space-between;   /* Distribute space between items */
+  gap: 20px;                        /* Space between each item */
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.about_section2 {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+
+.about_chart-layout_item {
+width: 15%; /* Set a fixed or relative width */
+text-align: center;
+background-color: #d7837f; /* Set the background color of the bars */
+color: white;
+padding: 8px 0;
+margin: 5px;
+border-radius: 4px;
+font-size: 14px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: var(--percent); /* Set the height based on the inline style */
+animation: growth ease-in-out 0.5s;
+}
+
+.about_chart-layout {
+margin: 20px 20% 0 20%;
+padding: 32px 0;
+height: 320px;
+/* background-color: white; */
+display: flex;
+justify-content: space-around;
+align-items: flex-end;
+max-width: 90%;
+box-sizing: border-box;
+}
+
+@keyframes growth {
+from {
+  opacity: 0;
+  height: 0;
+}
+to {
+  opacity: 1;
+  height: var(--percent);
+}
+}
+
+
+
+.about_section1 {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+
+.about_section1 h2 {
+text-decoration: 2px underline green;
+
+}
+
+.about_container1 {
+text-align: justify;
+}
+
+.about_container1, p {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.why_choose, ul {
+margin-top: 10px;
+line-height: 1.6;
+}
+.our_team {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+
+.about_section1 br {
+  margin-bottom: 20px;
+}
+
+.about_item {
+  display: flex;                    /* Flex container for the contents of each member box */
+  flex-direction: column;           /* Arrange contents inside each member box vertically */
+  min-width: 100px;                 /* Minimum width for each member box */
+  max-width: 200px;                 /* Maximum width for each member box */
+  margin: 10px;                     /* Margin around each member box */
+}
+
+.about_item {
+  display:flex;
+  flex-direction: column;
+}
+
+.about_title {
+  text-align: left;
+}
+
+.why_choose li {
+  text-align: justify;
+}
+
+.about_footer {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-top: 2px solid black;
+  padding-top: 10px;
+}
+
+.about_introduction1 {
+flex: 1 !important;                 /* Make each column take up equal space */
+padding: 0 10px !important;
+}
+
+.about_introduction1 p {
+margin: 5px 0 !important;           /* Add margin between paragraphs */
+}
+
+.form_first {
+display: flex;  
+}
+
+.paragraph1 {
+  min-width: 120px;
+}
+
+
+.about_introduction2 {
+display: flex !important;            /* Use Flexbox for horizontal alignment */
+justify-content: flex-start !important; /* Space items evenly */ 
+background-color: antiquewhite;
+border-radius: 25px;
+padding: 10px;
+border: #000000 dashed;
+margin-bottom: 100px;
+gap:20px;
+}
+
+
+
+.about_header_group {
+  text-align: center;
+  font-family: "Oswald", serif !important;
+  margin: 30px;
+  border: #0d2240 5px outset;
+  transition: all 0.3s ease !important; /* Smooth transition for all properties */
+  color: #0d2240;
+   
+}
+
+.about_header_group:hover {
+padding: 30px; /* Increase padding on hover */
+transform: scale(1.05) !important; /* Slightly scale up the header */
+}
+
+/* Container for all members */
+.Our_members {
+  display: flex;                    /* Flex container, arranging items in a row */
+  flex-wrap: wrap;                  /* Allow items to wrap to the next line if needed */
+  justify-content: space-between;   /* Distribute space between items */
+  gap: 20px;                        /* Space between each item */
+  padding: 5px;
+  background-color: antiquewhite;
+  border-radius: 25px;
+  margin-bottom: 100px;
+  border: #000000 dashed;
+ 
+}
+
+/* Individual member box */
+.member_box {
+  display: flex;                    /* Flex container for the contents of each member box */
+  flex-direction: column;           /* Arrange contents inside each member box vertically */
+  min-width: 100px;                 /* Minimum width for each member box */
+  max-width: 200px;                 /* Maximum width for each member box */
+  margin: 5px;                     /* Margin around each member box */
+}
+
+/* Image styling */
+.image_box {
+  width: 100%;                      /* Make image take full width of the container */
+  height: 260px;                     /* Maintain aspect ratio */
+  border-radius: 5px;               /* Optional: add rounded corners to the image */
+}
+
+/* Center content inside member box */
+.mem_center {
+  text-align: center;               /* Center-align text inside member box */
+  padding: 10px;                    /* Optional: add padding inside member box */
+}
+
+.mem_name {
+  font-size: larger;
+}
+
+.schedule, table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  
+}
+th, td {
+  
+  padding: 10px;
+  text-align: center;
+  width: 12.5%;
+  /* border-radius: 10px; */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+th {
+  background-color: yellowgreen;
+}
+.about_td {
+  background-color: #ffffff;
+  border: 2px dashed darkcyan
+}
+th:hover, td:hover {
+  background-color: orange !important; /* Change background color on hover */
+  cursor: pointer;          /* Change cursor to pointer on hover */
+}
+
+
+/* responsive Group Details*/
+
+/* General responsiveness */
+@media (max-width: 768px) {
+.container {
+  padding: 0 20px;
+}
+
+.about_header_group {
+  font-size: 20px;
+  margin: 15px;
+}
+
+.about_introduction1, .about_introduction2 {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about_introduction2 {
+  margin: 10px 5% 0 5%; /* Reduce margins for smaller screens */
+}
+
+.form_first { 
+  display: block; /* Stack items vertically on smaller screens */
+}
+
+.paragraph1,
+.paragraph2 {
+  min-width: auto;
+  width: 100%;
+}
+
+.paragraph1 {
+  font-weight: bold;
+}
+}
+
+/* time table */
+/* Responsive timetable */
+@media (max-width: 768px) {
+.schedule {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 600px; /* Set minimum width so that it doesn't collapse */
+}
+
+th, td {
+  font-size: 14px; /* Adjust font size for readability */
+  padding: 8px;
+}
+}
+
+@media (max-width: 768px) {
+/* Adjust padding for the container on small screens */
+.container {
+  padding: 0 20px;
+}
+
+/* Group header font size */
+.about_header_group {
+  font-size: 20px;
+  margin: 15px;
+}
+
+/* Stack columns vertically in the .about_introduction2 container */
+.about_introduction2 {
+  flex-direction: column;
+  padding: 15px;
+}
+
+/* Adjust the flex items inside .about_introduction1 to have more space */
+.about_introduction1 {
+  margin-bottom: 20px;
+}
+
+/* Further adjustments for the text */
+.about_introduction1 p {
+  font-size: 16px;
+}
+}
+
+/* Further small screen optimizations for very narrow devices */
+@media (max-width: 480px) {
+/* Reduce font size even further */
+.about_header_group {
+  font-size: 18px;
+}
+
+/* Adjust the group name, ID, and other info fonts */
+.about_introduction1 p {
+  font-size: 14px;
+}
+
+/* Ensure padding adjustments for tighter spaces */
+.about_introduction1 {
+  padding: 5px;
+}
+
+/* Make the container width more flexible */
+.about_introduction2 {
+  padding: 10px;
+  gap: 10px;
+}
+}
+
+/* responsive Employment Rate */
+@media (max-width: 576px) {
+.about_chart-layout {
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.about_chart-layout_item {
+  width: 80%;
+  margin: 10px 0;
+}
+}
 
 /* Jobs Styling */
   .job-description {
@@ -821,32 +1188,50 @@ html {
     cursor: pointer;
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
-  }
+    transition: all 0.3s ease-in-out;
 
-  .job_card:hover {
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; /* Prevents image from overflowing */
+    padding: 5px; /* Space inside border */
+    border-radius: 8px;
+}
+
+
+.job_card:hover {
     transform: scale(1.1); /* Apply transform to the entire card */
-    opacity: 0.65; /* Reduce opacity to 65% on hover */
-  }
+    border: 4px solid rgb(77, 136, 128); /* Dark teal border */
+    border-radius: 8px;
+    padding: 5px;
+}
 
-  .card_img {
+.card_img {
     width: 100%;
     height: 250px;
     margin-right: 10px;
-  }
-
-  .card_name {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    display: block; /* Prevents extra space below */
+    max-width: 100%; /* Ensures responsiveness */
+    border-radius: 8px;
+}
+.card_img:hover{
+    filter: brightness(1.2); /* Makes the image appear bolder */
+    transform: scale(1.05);  /* Slightly enlarges the image */
+}
+.card_name {
     margin: 0;
     margin-bottom: 10px;
     align-self: flex-start;
     font-size: 25px;
-    color: #E0E0E0;
+    color: #fff;
     
-  }
+}
 
-  .card_name:hover {
+.card_name:hover {
     color: gray;
-  }
+    transform: scale(1.1);
+    visibility: hidden;  /* Ensures it's completely hidden */
+}
     /* style for card inside */
   .job .content {
     display: none;
@@ -922,18 +1307,49 @@ html {
     background-color: rgb(204, 236, 239);
     border: dashed 2px rgb(115, 140, 140);
   }
+  .ply_sence{
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 8px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: black;
+    font-weight: bold;
+    
+}
+
+  /* close and apply */
+  .gr-btn, .back-btn, .apply{
+      font-family: "Poppins", sans-serif;
+  }
+  .gr-btn{
+      display: inline-block;
+      margin: 10px;
+      padding: 5px 10px;
+      background-color: rgb(77, 136, 128);
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+
+  .apply{
+      color: white;
+  }
+
+  .apl-btn:hover{
+    
+      background-color: rgb(57, 116, 108)
+  }
   .back-btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    
+      background-color: rgb(192, 86, 86);
+      color: white;
+      
   }
   .back-btn:hover {
-    background-color: red;
+      background-color: rgb(172, 66, 66);
+      
   }
   
   /* Responsive */
@@ -1273,26 +1689,26 @@ html {
 
   /* Responsiveness */
   @media (max-width: 768px) {
-    form {
+    .form-form {
         padding: 20px;
     }
 
-    h1, legend {
+    .form-font {
         font-size: 1.4em;
     }
   }
 
   @media (max-width: 576px) {
-    body {
+    .apply-background {
         padding: 15px;
     }
 
-    form {
+    .form-form, .form-bd {
         padding: 15px;
     }
 
-    input, select, textarea, button {
-        font-size: 14px;
+    input, select, .form-textarea, .button, .checkbox_name, .form-font {
+        font-size: 20px;
     }
   }
 /* Enhancements Styling */
@@ -1353,11 +1769,6 @@ a {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #003d82;
 }
 
 /* Responsive Design */

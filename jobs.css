@@ -1,0 +1,194 @@
+/* Jobs Styling */
+.job-description {
+    background-image: url(./images/br4.jpg);
+    
+    margin: 0;
+  }
+  /* style for job card */
+  #job_list {
+    
+
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .job {
+    display: flex;
+    flex-direction: column; /* Ensure job content aligns correctly */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: calc(33% - 20px); /* Adjust width according to how many cards you want in a row (35% for 2 cards in a row) */
+  }
+
+  .job_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+  }
+
+  .job_card:hover {
+    transform: scale(1.1); /* Apply transform to the entire card */
+    opacity: 0.65; /* Reduce opacity to 65% on hover */
+  }
+
+  .card_img {
+    width: 100%;
+    height: 250px;
+    margin-right: 10px;
+  }
+
+  .card_name {
+    margin: 0;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    font-size: 25px;
+    color: #E0E0E0;
+    
+  }
+
+  .card_name:hover {
+    color: gray;
+  }
+    /* style for card inside */
+  .job .content {
+    display: none;
+  }
+  .card_inputtag[type="checkbox"] {
+    display: none;
+  }
+  .card_inputtag[type="checkbox"]:checked ~ .job_card {
+    display: none;
+  }
+  .card_inputtag[type="checkbox"]:checked ~ .content {
+    display: block;
+  }
+  .content{
+    background-color: rgb(182, 227, 220);
+    border: solid 5px rgb(177, 187, 148);
+    
+
+  }
+  .main{
+    border: transparent 1px green;
+    
+  }
+  .position_name{
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    padding: 5px 10px;
+    margin: 0;
+    color: rgb(0, 82, 147);
+  }
+  .ref_number{
+    padding: 5px 10px;
+    margin: 0;
+  color: rgb(0, 82, 147);
+
+  }
+  .def_head{
+    padding: 10px;
+  } 
+  .details{
+    flex-direction: column;
+    /* display: flex;
+    justify-content: space-between; */
+    padding-bottom: 10px;
+  }
+  .details_title {
+    flex: 1;
+    padding: 10px;
+    
+  }
+  .des_title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(72, 102, 122);
+    font-family: "Oswald", serif;
+  }
+  .def_subtitle{
+    color: rgb(115, 140, 140);
+  }
+
+  .def_content {
+    margin-top: 10px;
+    color: rgb(33, 37, 41);
+    margin: 5px 20px;
+  
+  }
+  .def_list{
+    padding: 10px;
+  }
+  .benefits {
+    padding: 10px;
+    margin: 8px;
+    margin-top: 10px;
+    background-color: rgb(204, 236, 239);
+    border: dashed 2px rgb(115, 140, 140);
+  }
+  .back-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .back-btn:hover {
+    background-color: red;
+  }
+  
+  /* Responsive */
+
+  @media screen and (max-width: 576px) /*for mobile devices*/ {
+  #job_list {
+        flex-direction: column;
+    }
+    .job {
+        
+        width: 100%; /* Adjust width for 1 card in a row */
+        margin: 10px 0;
+    }
+  .job_card{
+      width: 350px;}
+    .content{
+        width: 400px;
+    }
+    .details {
+        flex-direction: column; /* Change to column direction */
+    }
+
+    .details_title {
+        width: 100%; /* Make each section take full width */
+        margin-bottom: 10px; /* Optional: Add margin to create space between sections */
+    }
+  }
+
+  @media screen and (max-width: 768px) /*for tablets*/ {
+    .job {
+        width: calc(50% - 20px); /* Adjust width for 2 cards in a row */
+    }
+    .def_content {
+        margin: 0 20px;
+        line-height: 1.5;
+    }
+
+  }
+  @media (max-width: 992px) /*for desktops*/ {
+    .job {
+        width: calc(50% - 20px); /* Adjust width for 3 cards in a row */
+    }
+    .def_content {
+        margin: 5px 20px;
+    }
+  }
